@@ -1,3 +1,6 @@
+/**
+ * @module baseTest
+ */
 class BaseTest {
     /**
      * let baseTest = new BaseTest()
