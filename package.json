@@ -1,6 +1,6 @@
 {
     "name": "html_basetest",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "description": "A way to more easily test for html selectors",
     "main": "index.js",
     "scripts": {},
@@ -12,5 +12,9 @@
         "test"
     ],
     "author": "lezzles11",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lezzles11/html_basetest"
+    }
 }
