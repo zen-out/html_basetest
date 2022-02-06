@@ -13,7 +13,7 @@ npm install html_basetest
 2. In your html document, import the script (make sure to import it after your JQuery script, and before your javascript file)
 
 ```
-<script src="./node_modules/html_baseTest/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html_basetest/index.js"></script>
 ```
 
 3. Create javascript file - make sure to put all your jquery selectors after the instantiator - e.g., 
