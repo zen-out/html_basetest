@@ -1,9 +1,11 @@
 {
     "name": "html_basetest",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "A way to more easily test for html selectors",
     "main": "index.js",
-    "scripts": {},
+    "scripts": {
+        "start": "git add . && git commit -m 'updated' && git push && npm publish"
+    },
     "keywords": [
         "html",
         "css",

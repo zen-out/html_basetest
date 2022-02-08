@@ -1,3 +1,5 @@
+![NPM Downloads](https://img.shields.io/npm/dw/html_basetest)
+
 # BaseTest
 
 The purpose of this repository is to allow users to more easily test for the various elements in their html documents. 
