@@ -1,6 +1,6 @@
 {
     "name": "html_basetest",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "A way to more easily test for html selectors",
     "main": "index.js",
     "scripts": {
