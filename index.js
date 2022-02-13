@@ -446,7 +446,7 @@ class BaseTest {
          * @description ensures that you can pass in jquery or string
          * @date 2022-01-05
          * @param {any} el
-         * @returns {any}
+         * @returns {boolean}
          */
     checkElement(el) {
             if (typeof el === "string") {
@@ -464,7 +464,7 @@ class BaseTest {
          * @date 2022-02-13
          * @param {any} one
          * @param {any} two
-         * @returns {any}
+         * @returns {boolean}
          */
     STRING_HAS(one, two) {
             console.log(typeof one, one, "ELEMENT")
@@ -491,7 +491,7 @@ class BaseTest {
          * @param {any} type
          * @param {any} item
          * @param {any} amount
-         * @returns {any}
+         * @returns {boolean}
          */
     STRING_COUNT(type, item, amount) {
             var isArr = Array.isArray(type);
@@ -520,7 +520,7 @@ class BaseTest {
          * @param {any} type
          * @param {any} item
          * @param {any} amount
-         * @returns {any}
+         * @returns {boolean}
          */
     STRING_ATLEAST(type, item, amount) {
             var isArr = Array.isArray(type);
@@ -549,7 +549,7 @@ class BaseTest {
          * @date 2022-02-13
          * @param {any} string
          * @param {any} item
-         * @returns {any}
+         * @returns {boolean}
          */
     STRING_DOESNOTHAVE(string, item) {
         let getItems = S(string).count(item)
@@ -567,7 +567,7 @@ class BaseTest {
      * @date 2022-01-05
      * @param {any} element
      * @param {any} classname
-     * @returns {any}
+     * @returns {boolean}
      */
     hasClass(element, classname) {
             element = this.checkElement(element)
@@ -587,7 +587,7 @@ class BaseTest {
          * @date 2022-01-05
          * @param {any} element
          * @param {any} id
-         * @returns {any}
+         * @returns {boolean}
          */
     hasId(element, id) {
             element = this.checkElement(element)
@@ -604,7 +604,7 @@ class BaseTest {
          * @date 2022-01-05
          * @param {any} element
          * @param {any} attribute
-         * @returns {any}
+         * @returns {boolean}
          */
     hasAttr(element, attribute) {
             element = this.checkElement(element)
@@ -626,7 +626,7 @@ class BaseTest {
          * @param {any} element
          * @param {any} key
          * @param {any} value=""
-         * @returns {any}
+         * @returns {boolean}
          */
     hasDataTest(element, key, value = "") {
             element = this.checkElement(element)
@@ -649,7 +649,7 @@ class BaseTest {
          * @date 2022-01-05
          * @param {any} element
          * @param {any} html
-         * @returns {any}
+         * @returns {boolean}
          */
     hasHTML(element, html) {
             element = this.checkElement(element)
@@ -667,7 +667,7 @@ class BaseTest {
          * @date 2022-01-05
          * @param {any} element
          * @param {any} child
-         * @returns {any}
+         * @returns {boolean}
          */
     hasChild(element, child) {
             element = this.checkElement(element)
@@ -683,7 +683,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 92 ~ existFalse", existFalse)
          * @date 2022-01-05
          * @param {any} element
-         * @returns {any}
+         * @returns {boolean}
          */
     exists(element) {
             element = this.checkElement(element)
@@ -702,7 +702,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 93 ~ visibleFalse", visibleFalse)
          * @date 2022-01-05
          * @param {any} element
-         * @returns {any}
+         * @returns {boolean}
          */
     visible(element) {
             element = this.checkElement(element)
@@ -719,7 +719,7 @@ class BaseTest {
          * @param {any} element
          * @param {any} key
          * @param {any} value
-         * @returns {any}
+         * @returns {boolean}
          */
     hasCSS(element, key, value) {
         element = this.checkElement(element)
