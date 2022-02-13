@@ -1,5 +1,14 @@
 $(() => {
     console.log("hello")
+
+    const getHAS = baseTest.HAS("helllo", "lo")
+    console.log("🚀 ~ file: test.js ~ line 5 ~ getHAS", getHAS)
+    const getCount = baseTest.COUNT("hello hello", "llo", 2)
+    console.log("🚀 ~ file: test.js ~ line 7 ~ getCount", getCount)
+    const getAtLeast = baseTest.ATLEAST("hello", "l", 1)
+    console.log("🚀 ~ file: test.js ~ line 9 ~ gtAtLeast", getAtLeast)
+    const doesNotHave = baseTest.DOESNOTHAVE("hello", "z")
+    console.log("🚀 ~ file: test.js ~ line 11 ~ doesNotHave", doesNotHave)
     let el = ".yonas"
     let love = $(".love")
     let hasClass = baseTest.hasClass(el, "yonas")
