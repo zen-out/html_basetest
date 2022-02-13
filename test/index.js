@@ -449,62 +449,109 @@ class BaseTest {
          * @returns {any}
          */
     checkElement(el) {
-        if (typeof el === "string") {
-            return $(el)
-        } else {
-            return el;
-        }
-    }
-    HAS(one, two) {
-        var isArr = Array.isArray(one);
-        let includes;
-        if (isArr) {
-            includes = one.includes(two)
-        } else if (typeof one === "string") {
-            includes = S(one).contains(two);
-        } else if (typeof one === "object") {
-            includes = Object.values(one)
-        } else {
-            throw new Error("Type is not string object or array")
-        }
-        return includes;
-    }
-    COUNT(type, item, amount) {
-        var isArr = Array.isArray(type);
-        let counts;
-        if (isArr) {
-            const freqCounter = {};
-            for (const num of isArr) {
-                freqCounter[num] = freqCounter[num] ? freqCounter[num] + 1 : 1;
+            if (typeof el === "string") {
+                return $(el)
+            } else {
+                return el;
             }
-            let getBoolean = freqCounter["item"] === amount;
-            counts = getBoolean
-        } else if (typeof type === "string") {
-            let getStringCount = S(type).count(item);
-            let stringIncludes = getStringCount === amount;
-            counts = stringIncludes
         }
-        return counts;
-    }
-    ATLEAST(type, item, amount) {
-        var isArr = Array.isArray(type);
-        let counts;
-        if (isArr) {
-            const freqCounter = {};
-            for (const num of isArr) {
-                freqCounter[num] = freqCounter[num] ? freqCounter[num] + 1 : 1;
+        /**
+         * @example
+         * const getHAS = baseTest.STRING_HAS("helllo", "lo")
+    console.log("🚀 ~ file: test.js ~ line 5 ~ getHAS", getHAS)
+    const getNeg = baseTest.STRING_HAS("hello", "z")
+    console.log("🚀 ~ file: test.js ~ line 7 ~ getNeg", getNeg)
+         * @date 2022-02-13
+         * @param {any} one
+         * @param {any} two
+         * @returns {any}
+         */
+    STRING_HAS(one, two) {
+            console.log(typeof one, one, "ELEMENT")
+            var isArr = Array.isArray(one);
+            let includes;
+            if (isArr) {
+                includes = one.includes(two)
+            } else if (typeof one === "string") {
+                includes = S(one).contains(two);
+            } else if (typeof one === "object") {
+                includes = Object.values(one)
+            } else {
+                throw new Error("Type is not string object or array")
             }
-            counts = freqCounter["item"]
-        } else if (typeof type === "string") {
-            counts = S(type).count(item);
+            return includes;
         }
-        if (counts >= amount) {
-            return true;
-        } else {
-            return false;
+        /**
+         * @example
+         * const getCount = baseTest.STRING_COUNT("hello hello", "llo", 2)
+    console.log("🚀 ~ file: test.js ~ line 7 ~ getCount", getCount)
+    const getNegC = baseTest.STRING_COUNT("hello", "z", 2)
+    console.log("🚀 ~ file: test.js ~ line 11 ~ getNegC", getNegC)
+         * @date 2022-02-13
+         * @param {any} type
+         * @param {any} item
+         * @param {any} amount
+         * @returns {any}
+         */
+    STRING_COUNT(type, item, amount) {
+            var isArr = Array.isArray(type);
+            let counts;
+            if (isArr) {
+                const freqCounter = {};
+                for (const num of isArr) {
+                    freqCounter[num] = freqCounter[num] ? freqCounter[num] + 1 : 1;
+                }
+                let getBoolean = freqCounter["item"] === amount;
+                counts = getBoolean
+            } else if (typeof type === "string") {
+                let getStringCount = S(type).count(item);
+                let stringIncludes = getStringCount === amount;
+                counts = stringIncludes
+            }
+            return counts;
         }
-    }
-    DOESNOTHAVE(string, item) {
+        /**
+         * @example
+         * const getAtLeast = baseTest.STRING_ATLEAST("hello", "l", 1)
+    console.log("🚀 ~ file: test.js ~ line 9 ~ gtAtLeast", getAtLeast)
+    const getAtLeastNeg = baseTest.STRING_ATLEAST("hello", "z", 1)
+    console.log("🚀 ~ file: test.js ~ line 16 ~ getAtLeastNeg", getAtLeastNeg)
+         * @date 2022-02-13
+         * @param {any} type
+         * @param {any} item
+         * @param {any} amount
+         * @returns {any}
+         */
+    STRING_ATLEAST(type, item, amount) {
+            var isArr = Array.isArray(type);
+            let counts;
+            if (isArr) {
+                const freqCounter = {};
+                for (const num of isArr) {
+                    freqCounter[num] = freqCounter[num] ? freqCounter[num] + 1 : 1;
+                }
+                counts = freqCounter["item"]
+            } else if (typeof type === "string") {
+                counts = S(type).count(item);
+            }
+            if (counts >= amount) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        /**
+         * @example
+         * const doesNotHave = baseTest.STRING_DOESNOTHAVE("hello", "z")
+    console.log("🚀 ~ file: test.js ~ line 11 ~ doesNotHave", doesNotHave)
+    const doesNotHaveNeg = baseTest.STRING_DOESNOTHAVE("hello", "ll")
+    console.log("🚀 ~ file: test.js ~ line 19 ~ doesNotHaveNeg", doesNotHaveNeg)
+         * @date 2022-02-13
+         * @param {any} string
+         * @param {any} item
+         * @returns {any}
+         */
+    STRING_DOESNOTHAVE(string, item) {
         let getItems = S(string).count(item)
         let getBoolean = getItems === 0
         return getBoolean;

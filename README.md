@@ -26,48 +26,148 @@ $(() => {
     console.log("first test passed", firstTest)
 })
 ```
-<a name="BaseTest"></a>
+<a name="module_baseTest"></a>
 
-## BaseTest
-**Kind**: global class  
+## baseTest
+
+* [baseTest](#module_baseTest)
+    * [~BaseTest](#module_baseTest..BaseTest)
+        * [new BaseTest()](#new_module_baseTest..BaseTest_new)
+        * [.checkElement(el)](#module_baseTest..BaseTest+checkElement) ⇒ <code>any</code>
+        * [.STRING_HAS(one, two)](#module_baseTest..BaseTest+STRING_HAS) ⇒ <code>any</code>
+        * [.STRING_COUNT(type, item, amount)](#module_baseTest..BaseTest+STRING_COUNT) ⇒ <code>any</code>
+        * [.STRING_ATLEAST(type, item, amount)](#module_baseTest..BaseTest+STRING_ATLEAST) ⇒ <code>any</code>
+        * [.STRING_DOESNOTHAVE(string, item)](#module_baseTest..BaseTest+STRING_DOESNOTHAVE) ⇒ <code>any</code>
+        * [.hasClass(element, classname)](#module_baseTest..BaseTest+hasClass) ⇒ <code>any</code>
+        * [.hasId(element, id)](#module_baseTest..BaseTest+hasId) ⇒ <code>any</code>
+        * [.hasAttr(element, attribute)](#module_baseTest..BaseTest+hasAttr) ⇒ <code>any</code>
+        * [.hasDataTest(element, key, value)](#module_baseTest..BaseTest+hasDataTest) ⇒ <code>any</code>
+        * [.hasHTML(element, html)](#module_baseTest..BaseTest+hasHTML) ⇒ <code>any</code>
+        * [.hasChild(element, child)](#module_baseTest..BaseTest+hasChild) ⇒ <code>any</code>
+        * [.exists(element)](#module_baseTest..BaseTest+exists) ⇒ <code>any</code>
+        * [.visible(element)](#module_baseTest..BaseTest+visible) ⇒ <code>any</code>
+        * [.hasCSS(element, key, value)](#module_baseTest..BaseTest+hasCSS) ⇒ <code>any</code>
+
+<a name="module_baseTest..BaseTest"></a>
+
+### baseTest~BaseTest
+**Kind**: inner class of [<code>baseTest</code>](#module_baseTest)  
 **Date**: 2022-01-05  
 
-* [BaseTest](#BaseTest)
-    * [new BaseTest()](#new_BaseTest_new)
-    * [.checkElement(el)](#BaseTest+checkElement) ⇒ <code>any</code>
-    * [.hasClass(element, classname)](#BaseTest+hasClass) ⇒ <code>any</code>
-    * [.hasId(element, id)](#BaseTest+hasId) ⇒ <code>any</code>
-    * [.hasAttr(element, attribute)](#BaseTest+hasAttr) ⇒ <code>any</code>
-    * [.hasDataTest(element, key, value)](#BaseTest+hasDataTest) ⇒ <code>any</code>
-    * [.hasHTML(element, html)](#BaseTest+hasHTML) ⇒ <code>any</code>
-    * [.hasChild(element, child)](#BaseTest+hasChild) ⇒ <code>any</code>
-    * [.exists(element)](#BaseTest+exists) ⇒ <code>any</code>
-    * [.visible(element)](#BaseTest+visible) ⇒ <code>any</code>
-    * [.hasCSS(element, key, value)](#BaseTest+hasCSS) ⇒ <code>any</code>
+* [~BaseTest](#module_baseTest..BaseTest)
+    * [new BaseTest()](#new_module_baseTest..BaseTest_new)
+    * [.checkElement(el)](#module_baseTest..BaseTest+checkElement) ⇒ <code>any</code>
+    * [.STRING_HAS(one, two)](#module_baseTest..BaseTest+STRING_HAS) ⇒ <code>any</code>
+    * [.STRING_COUNT(type, item, amount)](#module_baseTest..BaseTest+STRING_COUNT) ⇒ <code>any</code>
+    * [.STRING_ATLEAST(type, item, amount)](#module_baseTest..BaseTest+STRING_ATLEAST) ⇒ <code>any</code>
+    * [.STRING_DOESNOTHAVE(string, item)](#module_baseTest..BaseTest+STRING_DOESNOTHAVE) ⇒ <code>any</code>
+    * [.hasClass(element, classname)](#module_baseTest..BaseTest+hasClass) ⇒ <code>any</code>
+    * [.hasId(element, id)](#module_baseTest..BaseTest+hasId) ⇒ <code>any</code>
+    * [.hasAttr(element, attribute)](#module_baseTest..BaseTest+hasAttr) ⇒ <code>any</code>
+    * [.hasDataTest(element, key, value)](#module_baseTest..BaseTest+hasDataTest) ⇒ <code>any</code>
+    * [.hasHTML(element, html)](#module_baseTest..BaseTest+hasHTML) ⇒ <code>any</code>
+    * [.hasChild(element, child)](#module_baseTest..BaseTest+hasChild) ⇒ <code>any</code>
+    * [.exists(element)](#module_baseTest..BaseTest+exists) ⇒ <code>any</code>
+    * [.visible(element)](#module_baseTest..BaseTest+visible) ⇒ <code>any</code>
+    * [.hasCSS(element, key, value)](#module_baseTest..BaseTest+hasCSS) ⇒ <code>any</code>
 
-<a name="new_BaseTest_new"></a>
+<a name="new_module_baseTest..BaseTest_new"></a>
 
-### new BaseTest()
+#### new BaseTest()
 let baseTest = new BaseTest()
 
-<a name="BaseTest+checkElement"></a>
+<a name="module_baseTest..BaseTest+checkElement"></a>
 
-### baseTest.checkElement(el) ⇒ <code>any</code>
+#### baseTest.checkElement(el) ⇒ <code>any</code>
 ensures that you can pass in jquery or string
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
 | --- | --- |
 | el | <code>any</code> | 
 
-<a name="BaseTest+hasClass"></a>
+<a name="module_baseTest..BaseTest+STRING_HAS"></a>
 
-### baseTest.hasClass(element, classname) ⇒ <code>any</code>
+#### baseTest.STRING\_HAS(one, two) ⇒ <code>any</code>
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
+**Date**: 2022-02-13  
+
+| Param | Type |
+| --- | --- |
+| one | <code>any</code> | 
+| two | <code>any</code> | 
+
+**Example**  
+```js
+const getHAS = baseTest.STRING_HAS("helllo", "lo")
+    console.log("🚀 ~ file: test.js ~ line 5 ~ getHAS", getHAS)
+    const getNeg = baseTest.STRING_HAS("hello", "z")
+    console.log("🚀 ~ file: test.js ~ line 7 ~ getNeg", getNeg)
+```
+<a name="module_baseTest..BaseTest+STRING_COUNT"></a>
+
+#### baseTest.STRING\_COUNT(type, item, amount) ⇒ <code>any</code>
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
+**Date**: 2022-02-13  
+
+| Param | Type |
+| --- | --- |
+| type | <code>any</code> | 
+| item | <code>any</code> | 
+| amount | <code>any</code> | 
+
+**Example**  
+```js
+const getCount = baseTest.STRING_COUNT("hello hello", "llo", 2)
+    console.log("🚀 ~ file: test.js ~ line 7 ~ getCount", getCount)
+    const getNegC = baseTest.STRING_COUNT("hello", "z", 2)
+    console.log("🚀 ~ file: test.js ~ line 11 ~ getNegC", getNegC)
+```
+<a name="module_baseTest..BaseTest+STRING_ATLEAST"></a>
+
+#### baseTest.STRING\_ATLEAST(type, item, amount) ⇒ <code>any</code>
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
+**Date**: 2022-02-13  
+
+| Param | Type |
+| --- | --- |
+| type | <code>any</code> | 
+| item | <code>any</code> | 
+| amount | <code>any</code> | 
+
+**Example**  
+```js
+const getAtLeast = baseTest.STRING_ATLEAST("hello", "l", 1)
+    console.log("🚀 ~ file: test.js ~ line 9 ~ gtAtLeast", getAtLeast)
+    const getAtLeastNeg = baseTest.STRING_ATLEAST("hello", "z", 1)
+    console.log("🚀 ~ file: test.js ~ line 16 ~ getAtLeastNeg", getAtLeastNeg)
+```
+<a name="module_baseTest..BaseTest+STRING_DOESNOTHAVE"></a>
+
+#### baseTest.STRING\_DOESNOTHAVE(string, item) ⇒ <code>any</code>
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
+**Date**: 2022-02-13  
+
+| Param | Type |
+| --- | --- |
+| string | <code>any</code> | 
+| item | <code>any</code> | 
+
+**Example**  
+```js
+const doesNotHave = baseTest.STRING_DOESNOTHAVE("hello", "z")
+    console.log("🚀 ~ file: test.js ~ line 11 ~ doesNotHave", doesNotHave)
+    const doesNotHaveNeg = baseTest.STRING_DOESNOTHAVE("hello", "ll")
+    console.log("🚀 ~ file: test.js ~ line 19 ~ doesNotHaveNeg", doesNotHaveNeg)
+```
+<a name="module_baseTest..BaseTest+hasClass"></a>
+
+#### baseTest.hasClass(element, classname) ⇒ <code>any</code>
 hasClass(element, classname)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
@@ -78,14 +178,14 @@ hasClass(element, classname)
 **Example**  
 ```js
 let hasClass = baseTest.hasClass(el, "yonas")
-         let hasClassFalse = baseTest.hasClass(el, "no")
+     let hasClassFalse = baseTest.hasClass(el, "no")
 ```
-<a name="BaseTest+hasId"></a>
+<a name="module_baseTest..BaseTest+hasId"></a>
 
-### baseTest.hasId(element, id) ⇒ <code>any</code>
+#### baseTest.hasId(element, id) ⇒ <code>any</code>
 hasId(element, id)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
@@ -100,12 +200,12 @@ let hasIdTrue = baseTest.hasId(el, "yon")
          let hasIdFalse = baseTest.hasId(el, "whatsup")
          console.log('hasIdFalse:', hasIdFalse);
 ```
-<a name="BaseTest+hasAttr"></a>
+<a name="module_baseTest..BaseTest+hasAttr"></a>
 
-### baseTest.hasAttr(element, attribute) ⇒ <code>any</code>
+#### baseTest.hasAttr(element, attribute) ⇒ <code>any</code>
 hasAttr(element, attribute)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
@@ -120,12 +220,12 @@ let hasAttrTrue = baseTest.hasAttr(el, "disabled")
          let hasAttrFalse = baseTest.hasAttr(el, "no")
          console.log('hasAttrFalse:', hasAttrFalse);
 ```
-<a name="BaseTest+hasDataTest"></a>
+<a name="module_baseTest..BaseTest+hasDataTest"></a>
 
-### baseTest.hasDataTest(element, key, value) ⇒ <code>any</code>
+#### baseTest.hasDataTest(element, key, value) ⇒ <code>any</code>
 hasDataTest(element, key, value = "")
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type | Default |
@@ -145,12 +245,12 @@ let hasDataTrue = baseTest.hasDataTest(el, "problem_id")
              let hasDataTrueTrue2 = baseTest.hasDataTest(el, "problem_id", "3")
              console.log("🚀 ~ file: baseTest.js ~ line 78 ~ hasDataTrueTrue2", hasDataTrueTrue2)
 ```
-<a name="BaseTest+hasHTML"></a>
+<a name="module_baseTest..BaseTest+hasHTML"></a>
 
-### baseTest.hasHTML(element, html) ⇒ <code>any</code>
+#### baseTest.hasHTML(element, html) ⇒ <code>any</code>
 hasHTML(element, html)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
@@ -167,12 +267,12 @@ let htmlTrue = baseTest.hasHTML(el, "<div>baller</div>")
          let htmltext = baseTest.hasHTML(el, "ll")
          console.log("🚀 ~ file: baseTest.js ~ line 84 ~ htmltext", htmltext)
 ```
-<a name="BaseTest+hasChild"></a>
+<a name="module_baseTest..BaseTest+hasChild"></a>
 
-### baseTest.hasChild(element, child) ⇒ <code>any</code>
+#### baseTest.hasChild(element, child) ⇒ <code>any</code>
 hasChild(element, child)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
@@ -187,28 +287,28 @@ let ChildTrue1 = baseTest.hasChild(el, ".supergrandchild")
          let hasChildFalse = baseTest.hasChild(el, ".what")
          console.log("🚀 ~ file: baseTest.js ~ line 105 ~ hasChildFalse", hasChildFalse)
 ```
-<a name="BaseTest+exists"></a>
+<a name="module_baseTest..BaseTest+exists"></a>
 
-### baseTest.exists(element) ⇒ <code>any</code>
+#### baseTest.exists(element) ⇒ <code>any</code>
 exists(element)
          let existTrue = baseTest.exists(el)
          console.log("🚀 ~ file: baseTest.js ~ line 90 ~ existTrue", existTrue)
          let existFalse = baseTest.exists($(".love"))
          console.log("🚀 ~ file: baseTest.js ~ line 92 ~ existFalse", existFalse)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
 | --- | --- |
 | element | <code>any</code> | 
 
-<a name="BaseTest+visible"></a>
+<a name="module_baseTest..BaseTest+visible"></a>
 
-### baseTest.visible(element) ⇒ <code>any</code>
+#### baseTest.visible(element) ⇒ <code>any</code>
 visible(element)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
@@ -222,16 +322,16 @@ let visibleTrue = baseTest.visible(el)
          let visibleFalse = baseTest.visible($(".noDisplay"))
          console.log("🚀 ~ file: baseTest.js ~ line 93 ~ visibleFalse", visibleFalse)
 ```
-<a name="BaseTest+hasCSS"></a>
+<a name="module_baseTest..BaseTest+hasCSS"></a>
 
-### baseTest.hasCSS(element, key, value) ⇒ <code>any</code>
+#### baseTest.hasCSS(element, key, value) ⇒ <code>any</code>
 hasCSS(element, key, value)
          let hasCSSFalse = baseTest.hasCSS(el, "color", "#6f57e5")
          console.log("🚀 ~ file: baseTest.js ~ line 95 ~ hasCSSFalse", hasCSSFalse)
          let hasCSSTrue = baseTest.hasCSS(el, "display", "flex")
          console.log("🚀 ~ file: baseTest.js ~ line 97 ~ hasCSSTrue", hasCSSTrue)
 
-**Kind**: instance method of [<code>BaseTest</code>](#BaseTest)  
+**Kind**: instance method of [<code>BaseTest</code>](#module_baseTest..BaseTest)  
 **Date**: 2022-01-05  
 
 | Param | Type |
