@@ -435,7 +435,8 @@
 class BaseTest {
     /**
      * let baseTest = new BaseTest()
-     * @date 2022-01-05
+     * @author lezzles11 :) www.github.com/lezzles11
+         * @date 2022-01-05
      * @returns {class}
      */
     constructor() {
@@ -444,6 +445,7 @@ class BaseTest {
         /**
          * checkElement(el) 
          * @description ensures that you can pass in jquery or string
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} el
          * @returns {boolean}
@@ -461,6 +463,7 @@ class BaseTest {
     console.log("🚀 ~ file: test.js ~ line 5 ~ getHAS", getHAS)
     const getNeg = baseTest.STRING_HAS("hello", "z")
     console.log("🚀 ~ file: test.js ~ line 7 ~ getNeg", getNeg)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-02-13
          * @param {any} one
          * @param {any} two
@@ -487,6 +490,7 @@ class BaseTest {
     console.log("🚀 ~ file: test.js ~ line 7 ~ getCount", getCount)
     const getNegC = baseTest.STRING_COUNT("hello", "z", 2)
     console.log("🚀 ~ file: test.js ~ line 11 ~ getNegC", getNegC)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-02-13
          * @param {any} type
          * @param {any} item
@@ -516,6 +520,7 @@ class BaseTest {
     console.log("🚀 ~ file: test.js ~ line 9 ~ gtAtLeast", getAtLeast)
     const getAtLeastNeg = baseTest.STRING_ATLEAST("hello", "z", 1)
     console.log("🚀 ~ file: test.js ~ line 16 ~ getAtLeastNeg", getAtLeastNeg)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-02-13
          * @param {any} type
          * @param {any} item
@@ -546,6 +551,7 @@ class BaseTest {
     console.log("🚀 ~ file: test.js ~ line 11 ~ doesNotHave", doesNotHave)
     const doesNotHaveNeg = baseTest.STRING_DOESNOTHAVE("hello", "ll")
     console.log("🚀 ~ file: test.js ~ line 19 ~ doesNotHaveNeg", doesNotHaveNeg)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-02-13
          * @param {any} string
          * @param {any} item
@@ -564,7 +570,8 @@ class BaseTest {
      * @example
      let hasClass = baseTest.hasClass(el, "yonas")
      let hasClassFalse = baseTest.hasClass(el, "no")
-     * @date 2022-01-05
+     * @author lezzles11 :) www.github.com/lezzles11
+         * @date 2022-01-05
      * @param {any} element
      * @param {any} classname
      * @returns {boolean}
@@ -584,6 +591,7 @@ class BaseTest {
          console.log('hasIdTrue:', hasIdTrue);
          let hasIdFalse = baseTest.hasId(el, "whatsup")
          console.log('hasIdFalse:', hasIdFalse);
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @param {any} id
@@ -601,6 +609,7 @@ class BaseTest {
          console.log('hasAttrTrue:', hasAttrTrue);
          let hasAttrFalse = baseTest.hasAttr(el, "no")
          console.log('hasAttrFalse:', hasAttrFalse);
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @param {any} attribute
@@ -622,6 +631,7 @@ class BaseTest {
              console.log("🚀 ~ file: baseTest.js ~ line 76 ~ hasDataTrueTrue", hasDataTrueTrue)
              let hasDataTrueTrue2 = baseTest.hasDataTest(el, "problem_id", "3")
              console.log("🚀 ~ file: baseTest.js ~ line 78 ~ hasDataTrueTrue2", hasDataTrueTrue2)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @param {any} key
@@ -646,6 +656,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 82 ~ htmlFalse", htmlFalse)
          let htmltext = baseTest.hasHTML(el, "ll")
          console.log("🚀 ~ file: baseTest.js ~ line 84 ~ htmltext", htmltext)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @param {any} html
@@ -664,6 +675,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 103 ~ ChildTrue1", ChildTrue1)
          let hasChildFalse = baseTest.hasChild(el, ".what")
          console.log("🚀 ~ file: baseTest.js ~ line 105 ~ hasChildFalse", hasChildFalse)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @param {any} child
@@ -681,6 +693,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 90 ~ existTrue", existTrue)
          let existFalse = baseTest.exists($(".love"))
          console.log("🚀 ~ file: baseTest.js ~ line 92 ~ existFalse", existFalse)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @returns {boolean}
@@ -700,6 +713,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 91 ~ visibleTrue", visibleTrue)
          let visibleFalse = baseTest.visible($(".noDisplay"))
          console.log("🚀 ~ file: baseTest.js ~ line 93 ~ visibleFalse", visibleFalse)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @returns {boolean}
@@ -715,6 +729,7 @@ class BaseTest {
          console.log("🚀 ~ file: baseTest.js ~ line 95 ~ hasCSSFalse", hasCSSFalse)
          let hasCSSTrue = baseTest.hasCSS(el, "display", "flex")
          console.log("🚀 ~ file: baseTest.js ~ line 97 ~ hasCSSTrue", hasCSSTrue)
+         * @author lezzles11 :) www.github.com/lezzles11
          * @date 2022-01-05
          * @param {any} element
          * @param {any} key

@@ -557,8 +557,6 @@ class BaseTest {
         return getBoolean;
     }
 
-
-
     /**
      * hasClass(element, classname)
      * @example

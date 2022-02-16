@@ -1,6 +1,5 @@
 $(() => {
     console.log("hello")
-
     const getHAS = baseTest.STRING_HAS("helllo", "lo")
     console.log("🚀 ~ file: test.js ~ line 5 ~ getHAS", getHAS)
     let check = baseTest.STRING_HAS($(".yonas"), "hi")
