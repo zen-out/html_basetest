@@ -15,7 +15,7 @@ npm install html_basetest
 2. In your html document, import the script (make sure to import it after your JQuery script, and before your javascript file)
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/html_basetest/index.js"></script>
+<script src="./node_modules/html_basetest/index.js"></script>
 ```
 
 3. Create javascript file - make sure to put all your jquery selectors after the instantiator - e.g., 
@@ -61,9 +61,9 @@ ensures that you can pass in jquery or string
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| el | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| el    | <code>any</code> |
 
 <a name="module_baseTest.. BaseTest+STRING_HAS"></a>
 
@@ -72,10 +72,10 @@ ensures that you can pass in jquery or string
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-02-13  
 
-| Param | Type |
-| --- | --- |
-| one | <code>any</code> | 
-| two | <code>any</code> | 
+| Param | Type             |
+|-------|------------------|
+| one   | <code>any</code> |
+| two   | <code>any</code> |
 
 **Example**  
 
@@ -93,11 +93,11 @@ console.log("🚀 ~ file: test.js ~ line 7 ~ getNeg", getNeg)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-02-13  
 
-| Param | Type |
-| --- | --- |
-| type | <code>any</code> | 
-| item | <code>any</code> | 
-| amount | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| type   | <code>any</code> |
+| item   | <code>any</code> |
+| amount | <code>any</code> |
 
 **Example**  
 
@@ -115,11 +115,11 @@ console.log("🚀 ~ file: test.js ~ line 11 ~ getNegC", getNegC)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-02-13  
 
-| Param | Type |
-| --- | --- |
-| type | <code>any</code> | 
-| item | <code>any</code> | 
-| amount | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| type   | <code>any</code> |
+| item   | <code>any</code> |
+| amount | <code>any</code> |
 
 **Example**  
 
@@ -137,10 +137,10 @@ console.log("🚀 ~ file: test.js ~ line 16 ~ getAtLeastNeg", getAtLeastNeg)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-02-13  
 
-| Param | Type |
-| --- | --- |
-| string | <code>any</code> | 
-| item | <code>any</code> | 
+| Param  | Type             |
+|--------|------------------|
+| string | <code>any</code> |
+| item   | <code>any</code> |
 
 **Example**  
 
@@ -160,10 +160,10 @@ hasClass(element, classname)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
-| classname | <code>any</code> | 
+| Param     | Type             |
+|-----------|------------------|
+| element   | <code>any</code> |
+| classname | <code>any</code> |
 
 **Example**  
 
@@ -181,10 +181,10 @@ hasId(element, id)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
-| id | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| element | <code>any</code> |
+| id      | <code>any</code> |
 
 **Example**  
 
@@ -204,10 +204,10 @@ hasAttr(element, attribute)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
-| attribute | <code>any</code> | 
+| Param     | Type             |
+|-----------|------------------|
+| element   | <code>any</code> |
+| attribute | <code>any</code> |
 
 **Example**  
 
@@ -227,11 +227,11 @@ hasDataTest(element, key, value = "")
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| element | <code>any</code> |  | 
-| key | <code>any</code> |  | 
-| value | <code>any</code> | <code>&quot; &quot; </code> | 
+| Param   | Type             | Default                     |
+|---------|------------------|-----------------------------|
+| element | <code>any</code> |                             |
+| key     | <code>any</code> |                             |
+| value   | <code>any</code> | <code>&quot; &quot; </code> |
 
 **Example**  
 
@@ -255,10 +255,10 @@ hasHTML(element, html)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
-| html | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| element | <code>any</code> |
+| html    | <code>any</code> |
 
 **Example**  
 
@@ -280,10 +280,10 @@ hasChild(element, child)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
-| child | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| element | <code>any</code> |
+| child   | <code>any</code> |
 
 **Example**  
 
@@ -308,9 +308,9 @@ exists(element)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| element | <code>any</code> |
 
 <a name="module_baseTest.. BaseTest+visible"></a>
 
@@ -321,9 +321,9 @@ visible(element)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| element | <code>any</code> |
 
 **Example**  
 
@@ -348,8 +348,8 @@ hasCSS(element, key, value)
 **Kind**: instance method of [<code>BaseTest</code>](#module_baseTest.. BaseTest)  
 **Date**: 2022-01-05  
 
-| Param | Type |
-| --- | --- |
-| element | <code>any</code> | 
-| key | <code>any</code> | 
-| value | <code>any</code> | 
+| Param   | Type             |
+|---------|------------------|
+| element | <code>any</code> |
+| key     | <code>any</code> |
+| value   | <code>any</code> |

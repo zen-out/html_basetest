@@ -22,8 +22,5 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/lezzles11/html_basetest"
-    },
-    "dependencies": {
-        "html_basetest": "^1.0.5"
     }
 }
