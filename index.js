@@ -21,8 +21,8 @@ class BaseTest {
     /**
     * hasClass(element, classname)
     * @example
-    let hasClass = baseTest.hasClass(el, "yonas")
-    let hasClassFalse = baseTest.hasClass(el, "no")
+    let hasClass = html_checks.hasClass(el, "yonas")
+    let hasClassFalse = html_checks.hasClass(el, "no")
     * @author zen-out
        * @date 2022-01-05
     * @returns {boolean}
@@ -38,9 +38,9 @@ class BaseTest {
         /**
         * hasId(element, id)
         * @example
-        let hasIdTrue = baseTest.hasId(el, "yon")
+        let hasIdTrue = html_checks.hasId(el, "yon")
         console.log('hasIdTrue:', hasIdTrue);
-        let hasIdFalse = baseTest.hasId(el, "whatsup")
+        let hasIdFalse = html_checks.hasId(el, "whatsup")
         console.log('hasIdFalse:', hasIdFalse);
         * @author zen-out
         * @date 2022-01-05
@@ -54,9 +54,9 @@ class BaseTest {
         /**
         * hasAttr(element, attribute)
         * @example
-        let hasAttrTrue = baseTest.hasAttr(el, "disabled")
+        let hasAttrTrue = html_checks.hasAttr(el, "disabled")
         console.log('hasAttrTrue:', hasAttrTrue);
-        let hasAttrFalse = baseTest.hasAttr(el, "no")
+        let hasAttrFalse = html_checks.hasAttr(el, "no")
         console.log('hasAttrFalse:', hasAttrFalse);
         * @author zen-out
         * @date 2022-01-05
@@ -70,14 +70,14 @@ class BaseTest {
         /**
         * hasDataTest(element, key, value = "")
         * @example
-        let hasDataTrue = baseTest.hasDataTest(el, "problem_id")
+        let hasDataTrue = html_checks.hasDataTest(el, "problem_id")
         console.log('hasDataTrue:', hasDataTrue);
-        let hasDataFalse = baseTest.hasDataTest(el, "task_id")
+        let hasDataFalse = html_checks.hasDataTest(el, "task_id")
         console.log('hasDataFalse:', hasDataFalse);
-           let hasDataTrueTrue = baseTest.hasDataTest(el, "problem_id", 3)
-           console.log("🚀 ~ file: baseTest.js ~ line 76 ~ hasDataTrueTrue", hasDataTrueTrue)
-           let hasDataTrueTrue2 = baseTest.hasDataTest(el, "problem_id", "3")
-           console.log("🚀 ~ file: baseTest.js ~ line 78 ~ hasDataTrueTrue2", hasDataTrueTrue2)
+           let hasDataTrueTrue = html_checks.hasDataTest(el, "problem_id", 3)
+           console.log("🚀 ~ file: html_checks.js ~ line 76 ~ hasDataTrueTrue", hasDataTrueTrue)
+           let hasDataTrueTrue2 = html_checks.hasDataTest(el, "problem_id", "3")
+           console.log("🚀 ~ file: html_checks.js ~ line 78 ~ hasDataTrueTrue2", hasDataTrueTrue2)
         * @author zen-out
         * @date 2022-01-05
         * @returns {boolean}
@@ -94,12 +94,12 @@ class BaseTest {
         /**
         * hasHTML(element, html)
         * @example
-        let htmlTrue = baseTest.hasHTML(el, "<div>baller</div>")
-        console.log("🚀 ~ file: baseTest.js ~ line 80 ~ htmlTrue", htmlTrue)
-        let htmlFalse = baseTest.hasHTML(el, "whatthef")
-        console.log("🚀 ~ file: baseTest.js ~ line 82 ~ htmlFalse", htmlFalse)
-        let htmltext = baseTest.hasHTML(el, "ll")
-        console.log("🚀 ~ file: baseTest.js ~ line 84 ~ htmltext", htmltext)
+        let htmlTrue = html_checks.hasHTML(el, "<div>baller</div>")
+        console.log("🚀 ~ file: html_checks.js ~ line 80 ~ htmlTrue", htmlTrue)
+        let htmlFalse = html_checks.hasHTML(el, "whatthef")
+        console.log("🚀 ~ file: html_checks.js ~ line 82 ~ htmlFalse", htmlFalse)
+        let htmltext = html_checks.hasHTML(el, "ll")
+        console.log("🚀 ~ file: html_checks.js ~ line 84 ~ htmltext", htmltext)
         * @author zen-out
         * @date 2022-01-05
         * @returns {boolean}
@@ -113,10 +113,10 @@ class BaseTest {
         /**
         * hasChild(element, child)
         * @example 
-        let ChildTrue1 = baseTest.hasChild(el, ".supergrandchild")
-        console.log("🚀 ~ file: baseTest.js ~ line 103 ~ ChildTrue1", ChildTrue1)
-        let hasChildFalse = baseTest.hasChild(el, ".what")
-        console.log("🚀 ~ file: baseTest.js ~ line 105 ~ hasChildFalse", hasChildFalse)
+        let ChildTrue1 = html_checks.hasChild(el, ".supergrandchild")
+        console.log("🚀 ~ file: html_checks.js ~ line 103 ~ ChildTrue1", ChildTrue1)
+        let hasChildFalse = html_checks.hasChild(el, ".what")
+        console.log("🚀 ~ file: html_checks.js ~ line 105 ~ hasChildFalse", hasChildFalse)
         * @author zen-out
         * @date 2022-01-05
         * @returns {boolean}
@@ -129,10 +129,10 @@ class BaseTest {
         }
         /**
         * exists(element)
-        let existTrue = baseTest.exists(el)
-        console.log("🚀 ~ file: baseTest.js ~ line 90 ~ existTrue", existTrue)
-        let existFalse = baseTest.exists($(".love"))
-        console.log("🚀 ~ file: baseTest.js ~ line 92 ~ existFalse", existFalse)
+        let existTrue = html_checks.exists(el)
+        console.log("🚀 ~ file: html_checks.js ~ line 90 ~ existTrue", existTrue)
+        let existFalse = html_checks.exists($(".love"))
+        console.log("🚀 ~ file: html_checks.js ~ line 92 ~ existFalse", existFalse)
         * @author zen-out
         * @date 2022-01-05
         * @returns {boolean}
@@ -148,10 +148,10 @@ class BaseTest {
         /**
         * visible(element)
         * @example
-        let visibleTrue = baseTest.visible(el)
-        console.log("🚀 ~ file: baseTest.js ~ line 91 ~ visibleTrue", visibleTrue)
-        let visibleFalse = baseTest.visible($(".noDisplay"))
-        console.log("🚀 ~ file: baseTest.js ~ line 93 ~ visibleFalse", visibleFalse)
+        let visibleTrue = html_checks.visible(el)
+        console.log("🚀 ~ file: html_checks.js ~ line 91 ~ visibleTrue", visibleTrue)
+        let visibleFalse = html_checks.visible($(".noDisplay"))
+        console.log("🚀 ~ file: html_checks.js ~ line 93 ~ visibleFalse", visibleFalse)
         * @author zen-out
         * @date 2022-01-05
         * @returns {boolean}
@@ -163,10 +163,10 @@ class BaseTest {
         }
         /**
         * hasCSS(element, key, value)
-        let hasCSSFalse = baseTest.hasCSS(el, "color", "#6f57e5")
-        console.log("🚀 ~ file: baseTest.js ~ line 95 ~ hasCSSFalse", hasCSSFalse)
-        let hasCSSTrue = baseTest.hasCSS(el, "display", "flex")
-        console.log("🚀 ~ file: baseTest.js ~ line 97 ~ hasCSSTrue", hasCSSTrue)
+        let hasCSSFalse = html_checks.hasCSS(el, "color", "#6f57e5")
+        console.log("🚀 ~ file: html_checks.js ~ line 95 ~ hasCSSFalse", hasCSSFalse)
+        let hasCSSTrue = html_checks.hasCSS(el, "display", "flex")
+        console.log("🚀 ~ file: html_checks.js ~ line 97 ~ hasCSSTrue", hasCSSTrue)
         * @author zen-out
         * @date 2022-01-05
         * @returns {boolean}
@@ -178,15 +178,15 @@ class BaseTest {
     }
     list() {
         const string = `
-        html_basetest.hasClass(el, "yonas")
-        html_basetest.hasId(el, "yon")
-        html_basetest.hasAttr(el, "disabled")
-        html_basetest.hasDataTest(el, "problem_id")
-        html_basetest.hasChild(el, ".what")
-        html_basetest.hasHTML(el, "<div>baller</div>")
-        html_basetest.exists($(".love"))
-        html_basetest.visible($(".noDisplay"))
-        html_basetest.hasCSS(el, "color", "#6f57e5")
+        html_checks.hasClass(el, "yonas")
+        html_checks.hasId(el, "yon")
+        html_checks.hasAttr(el, "disabled")
+        html_checks.hasDataTest(el, "problem_id")
+        html_checks.hasChild(el, ".what")
+        html_checks.hasHTML(el, "<div>baller</div>")
+        html_checks.exists($(".love"))
+        html_checks.visible($(".noDisplay"))
+        html_checks.hasCSS(el, "color", "#6f57e5")
       `
         console.log(string)
         return string;
@@ -194,4 +194,4 @@ class BaseTest {
 
 }
 
-let html_basetest = new BaseTest()
+let html_checks = new BaseTest()
